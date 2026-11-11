@@ -1,0 +1,37 @@
+{
+  "policies": {
+    "working_hours": {
+      "start": "09:00",
+      "end": "18:00",
+      "break": "13:00-14:00",
+      "description": "Standard working hours are 9 AM to 6 PM with a 1-hour lunch break."
+    },
+    "annual_leave": {
+      "days": 20,
+      "description": "Employees are entitled to 20 days of paid annual leave per year."
+    },
+    "sick_leave": {
+      "days": 10,
+      "description": "Employees are entitled to 10 days of paid sick leave per year. Medical certificates may be required for leaves exceeding 2 consecutive days."
+    },
+    "maternity_leave": {
+      "days": 180,
+      "description": "Female employees are entitled to 180 days (6 months) of paid maternity leave."
+    },
+    "paternity_leave": {
+      "days": 10,
+      "description": "Male employees are entitled to 10 days of paid paternity leave."
+    },
+    "casual_leave": {
+      "days": 5,
+      "description": "Employees are entitled to 5 days of casual leave per year, typically for personal errands or emergencies."
+    },
+    "work_from_home": {
+      "days_per_week": 3,
+      "description": "Employees may work from home up to 3 days per week with manager approval. WFH policy promotes work-life balance while maintaining collaboration."
+    },
+    "leaves_without_pay": {
+      "description": "Upon approval, employees may take unpaid leave beyond their entitled days. This requires at least 30 days notice and manager approval."
+    }
+  }
+}

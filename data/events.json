@@ -1,0 +1,49 @@
+{
+  "events": [
+    {
+      "id": "evt_001",
+      "title": "Q4 All-Hands Meeting",
+      "date": "2024-11-15",
+      "time": "10:00",
+      "location": "Main Conference Hall",
+      "description": "Quarterly business update and company achievements",
+      "type": "company"
+    },
+    {
+      "id": "evt_002",
+      "title": "Tech Talk: AI/ML Trends",
+      "date": "2024-11-20",
+      "time": "14:00",
+      "location": "Auditorium",
+      "description": "Industry experts discussing latest AI/ML developments",
+      "type": "learning"
+    },
+    {
+      "id": "evt_003",
+      "title": "Team Building Activity",
+      "date": "2024-11-25",
+      "time": "16:00",
+      "location": "Sports Complex",
+      "description": "Casual team bonding and outdoor activities",
+      "type": "social"
+    },
+    {
+      "id": "evt_004",
+      "title": "Product Launch Celebration",
+      "date": "2024-12-01",
+      "time": "18:00",
+      "location": "Rooftop Lounge",
+      "description": "Celebrating the launch of our new flagship product",
+      "type": "company"
+    },
+    {
+      "id": "evt_005",
+      "title": "Year-End Gala Dinner",
+      "date": "2024-12-15",
+      "time": "19:00",
+      "location": "Grand Ballroom",
+      "description": "Formal celebration and awards ceremony",
+      "type": "social"
+    }
+  ]
+}

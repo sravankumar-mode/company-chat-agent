@@ -1,0 +1,84 @@
+{
+  "holidays": [
+    {
+      "date": "2024-01-26",
+      "name": "Republic Day",
+      "type": "national"
+    },
+    {
+      "date": "2024-03-08",
+      "name": "International Women's Day",
+      "type": "optional"
+    },
+    {
+      "date": "2024-03-25",
+      "name": "Holi",
+      "type": "national"
+    },
+    {
+      "date": "2024-04-11",
+      "name": "Eid ul-Fitr",
+      "type": "optional"
+    },
+    {
+      "date": "2024-04-17",
+      "name": "Ram Navami",
+      "type": "optional"
+    },
+    {
+      "date": "2024-04-21",
+      "name": "Mahavir Jayanti",
+      "type": "national"
+    },
+    {
+      "date": "2024-05-23",
+      "name": "Buddha Purnima",
+      "type": "national"
+    },
+    {
+      "date": "2024-08-15",
+      "name": "Independence Day",
+      "type": "national"
+    },
+    {
+      "date": "2024-08-26",
+      "name": "Janmashtami",
+      "type": "optional"
+    },
+    {
+      "date": "2024-09-16",
+      "name": "Milad un-Nabi",
+      "type": "optional"
+    },
+    {
+      "date": "2024-10-02",
+      "name": "Gandhi Jayanti",
+      "type": "national"
+    },
+    {
+      "date": "2024-10-12",
+      "name": "Dussehra",
+      "type": "national"
+    },
+    {
+      "date": "2024-10-31",
+      "name": "Diwali",
+      "type": "national"
+    },
+    {
+      "date": "2024-11-01",
+      "name": "Diwali (Day 2)",
+      "type": "national"
+    },
+    {
+      "date": "2024-11-15",
+      "name": "Guru Nanak Jayanti",
+      "type": "national"
+    },
+    {
+      "date": "2024-12-25",
+      "name": "Christmas",
+      "type": "national"
+    }
+  ]
+}
