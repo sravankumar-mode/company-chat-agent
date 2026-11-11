@@ -13,6 +13,7 @@ from fastapi.responses import JSONResponse
 from contextlib import asynccontextmanager
 
 from config.settings import settings
+from google_chat import router as google_chat_router
 from graph import run_agent_graph
 
 
@@ -69,6 +70,8 @@ app = FastAPI(
     version="1.0.0",
     lifespan=lifespan,
 )
+
+app.include_router(google_chat_router)
 
 
 @app.get(

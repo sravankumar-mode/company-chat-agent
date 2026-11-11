@@ -11,6 +11,8 @@ class Settings:
 
     openai_api_key: str = os.getenv("OPENAI_API_KEY", "")
     openai_model: str = os.getenv("OPENAI_MODEL", "gpt-3.5-turbo")
+    # Google Chat: HTTP endpoint URL (ID token audience) or numeric project number (JWT audience)
+    google_chat_audience: str = os.getenv("GOOGLE_CHAT_AUDIENCE", "")
 
     def validate(self) -> None:
         """Ensure OPENAI_API_KEY is configured."""

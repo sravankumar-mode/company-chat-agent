@@ -158,9 +158,25 @@ Assistant: [Response about team members]
 ```
 GET  /health       - Health check
 POST /chat         - Send message
+POST /google-chat  - Google Chat event endpoint (bearer-token verified)
 GET  /docs         - Swagger UI
 GET  /redoc        - ReDoc
 ```
+
+### Google Chat Integration
+
+`POST /google-chat` handles `MESSAGE`, `ADDED_TO_SPACE` and `REMOVED_FROM_SPACE` events and answers through the same LangGraph workflow as `/chat`. Each user in each space gets its own conversation thread.
+
+Setup:
+1. Set `GOOGLE_CHAT_AUDIENCE` (see `.env.example`). Without it the endpoint returns 500.
+2. Deploy to Cloud Run. The service must allow unauthenticated invocations, because Chat calls it directly. Every request is still checked against Google's signed bearer token, so the endpoint is not open.
+3. In the Google Cloud Console, open **APIs & Services > Google Chat API > Configuration**:
+   - Turn **off** "Build this Chat app as a Google Workspace add-on".
+   - Set **App URL / HTTP endpoint URL** to `https://<service-url>/google-chat`.
+   - Set **Authentication Audience** to "HTTP endpoint URL" (then `GOOGLE_CHAT_AUDIENCE` = the same endpoint URL), or to "Project number" (then `GOOGLE_CHAT_AUDIENCE` = the project number).
+4. Add the app to a Chat space and send a message.
+
+Limitation: conversation memory is kept in process (`MemorySaver`). It is lost on restart and is not shared across Cloud Run instances.
 
 ## License
 
